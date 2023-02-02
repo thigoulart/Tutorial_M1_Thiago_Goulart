@@ -1,10 +1,9 @@
 extends Node # instancia a classe Node2D
 
-var status = 1
-var vscore = 0
-var x = 1.5 
-var y = 1.5 
-#ghngmjgkjhlkll.j
+var status = 1 #Serve para o jogo rodar (var = GameOver; var diferente de 0 ou 1 = Game não roda)
+var vscore = 0 #Zera o jogo quando renicia
+var x = 3 #Velocidade do cenário na horizontal
+var y = 3 #Gravidade/peso do personagem (dragão)
 # executa essa função ao carregar o jogo
 func _ready():
 	# oculta o "gameover"
@@ -41,11 +40,11 @@ func _process(delta):
 			
 		# se apertou seta para baixo, aumenta o valor de y (posição vertical) do dragão
 		if Input.is_action_pressed("ui_down"):
-			$dragon.position.y += 2
+			$dragon.position.y += 4
 
 		# se apertou seta para cima, diminui o valor de y (posição vertical) do dragão
 		if Input.is_action_pressed("ui_up"):
-			$dragon.position.y -= 4
+			$dragon.position.y -= 8
 			
 	elif status == 0: # parado
 		
