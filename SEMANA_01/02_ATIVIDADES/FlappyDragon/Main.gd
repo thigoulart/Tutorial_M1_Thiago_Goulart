@@ -1,7 +1,7 @@
 extends Node # instancia a classe Node2D
 
-var status = 1 #Serve para o jogo rodar (var = GameOver; var diferente de 0 ou 1 = Game não roda)
-var vscore = 0 #Zera o jogo quando renicia
+var status = 1 #Serve para o jogo rodar (var igual a 0 = GameOver; var diferente de 0 ou 1 = Game não roda)
+var vscore = 9 #Zera a pontuação do jogo quando renicia
 var x = 3 #Velocidade do cenário na horizontal
 var y = 3 #Gravidade/peso do personagem (dragão)
 # executa essa função ao carregar o jogo
